@@ -1,7 +1,12 @@
 
 /**
- *
- * @author Team1 - DCBA
+ * Introduction to Programming
+ * @author             Team1 - DCBA
+ *         Aldo Sunan        - 
+ *         M. Ilmi Nasrulloh - 2602233235
+ *         Muliando Marpaung - 
+ *         Nurul Amalia      - 
+ *         Parlin Situmeang  -
  */
 public class restoranBungar {
 
