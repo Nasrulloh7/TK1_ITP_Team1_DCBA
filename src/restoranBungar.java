@@ -6,7 +6,7 @@
  *         M. Ilmi Nasrulloh - 2602233235
  *         Muliando Marpaung - 
  *         Nurul Amalia      - 
- *         Parlin Situmeang  -
+ *         Parlin Situmeang  - 2602239056
  */
 public class restoranBungar {
 
