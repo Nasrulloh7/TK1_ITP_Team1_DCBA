@@ -20,24 +20,29 @@ public class restoranBungar {
         
         int jumlah_orang;
         String nama_pemesan;
+        
+        // variable menu makanan
         double makanan1_price = 9999.99,
-                makanan2_price = 12345.67,
-                makanan3_price = 21108.40,
-                makanan4_price = 13579.13,
-                makanan5_price = 98765.43;
+               makanan2_price = 12345.67,
+               makanan3_price = 21108.40,
+               makanan4_price = 13579.13,
+               makanan5_price = 98765.43;
         
         //====Tugas Nomor 1 A dan B=====//
         System.out.println("Selamat Datang di Restoran BUNGAR");
         System.out.print("Selamat siang..." + "\n");
-        System.out.print("Pesan untuk berapa orang :");
+        
+        // input jumlah orang
+        System.out.print("Pesan untuk berapa orang : ");
         int jumlahorang = input.nextInt();
         input.nextLine();
         
-        System.out.println("Pesanan atas nama :");
+        // input nama pemesan
+        System.out.print("Pesanan atas nama \t : ");
         String namapemesan = input.nextLine();
         
-        
-        System.out.println("Menu spesial hari ini" + "\n");
+        // Menampilkan menu makanan
+        System.out.println("\n" + "Menu spesial hari ini");
         System.out.println("=====================" + "\n");
         
         System.out.printf(" 1. Nasi Goreng Spesial        Rp. %,.2f%n", makanan1_price);
