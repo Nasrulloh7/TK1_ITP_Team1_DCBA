@@ -108,6 +108,16 @@ public class restoranBungar {
          System.out.println("=======================================================================");
         //====Selesai Nomor 3=====//
         
+         System.out.print("Total Pembelian                                   = Rp. " + Total);
+        System.out.print("\nDisc 10% <Masa Promosi>                           = Rp. " + Diskon+" -");
+        System.out.println("\n=======================================================================");
+        //====Selesai Nomor 4=====//
+
+        System.out.print("Total Pembelian setelah Disc 10%                  = Rp. " + Total_bayar);
+        System.out.print("\nPembelian per orang <untuk 8 orang>               = Rp. " + Pembelian_perorang);
+
+        System.out.print("\n             Terima kasih atas kunjungan anda...");
+        System.out.print("\n             ...Tekan ENTER untuk keluar...");
     }
     
 }
