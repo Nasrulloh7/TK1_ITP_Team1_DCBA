@@ -18,8 +18,8 @@ public class restoranBungar {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         
-        int jumlah_orang;
-        String nama_pemesan;
+        //int jumlah_orang;
+        //String nama_pemesan;
         
         // variable menu makanan
         double makanan1_price = 9999.99,
@@ -95,29 +95,30 @@ public class restoranBungar {
          double Pembelian_perorang = Total_bayar/jumlahorang;
         
          
-         System.out.println("\n\n" + "Selamat menikmati makanan anda..." + "\n");
+         System.out.printf("\n\n" + "Selamat menikmati makanan anda, Kak %s", namapemesan + "\n\n");
          
         //====Hasil Penghitungan pesanan=====//
-         System.out.print("Harga Pembelian : ");
-         System.out.printf("\n 1. Nasi Goreng Spesial       %d Porsi *  9999,99  = Rp. " + Menu1, pesanan1);
-         System.out.printf("\n 2. Ayam goreng Spesial       %d Porsi *  12345,67 = Rp. " + Menu2, pesanan2);
-         System.out.printf("\n 3. Steak Sirloin Spesial     %d Porsi *  21108,40 = Rp. " + Menu3, pesanan3);
-         System.out.printf("\n 4. Kwetiaw Siram Spesial     %d Porsi *  13579,13 = Rp. " + Menu4, pesanan4);
-         System.out.printf("\n 5. Kambing Guling Spesial    %d Porsi *  98765,43 = Rp. " + Menu5, pesanan5);
-         System.out.println("");
-         System.out.println("=======================================================================");
+         System.out.print("Harga Pembelian : \n");
+         System.out.printf("1. Nasi Goreng Spesial       %d Porsi * 9999,99  = Rp. %.2f%n", pesanan1, Menu1);
+         System.out.printf("2. Ayam goreng Spesial       %d Porsi * 12345,67 = Rp. %.2f%n", pesanan2, Menu2);
+         System.out.printf("3. Steak Sirloin Spesial     %d Porsi * 21108,40 = Rp. %.2f%n", pesanan3, Menu3);
+         System.out.printf("4. Kwetiaw Siram Spesial     %d Porsi * 13579,13 = Rp. %.2f%n", pesanan4, Menu4);
+         System.out.printf("5. Kambing Guling Spesial    %d Porsi * 98765,43 = Rp. %.2f%n", pesanan5, Menu5);
+         System.out.println("================================================================= (+)");
         //====Selesai Nomor 3=====//
         
-         System.out.print("Total Pembelian                                   = Rp. " + Total);
-        System.out.print("\nDisc 10% <Masa Promosi>                           = Rp. " + Diskon+" -");
-        System.out.println("\n=======================================================================");
+        System.out.printf("Total Pembelian \t\t\t\t= Rp. %.2f%n", Total);
+        System.out.print("Disc. 10% <Masa Promosi> \t\t\t= Rp. " + Diskon);
+        System.out.println("\n================================================================= (-)");
         //====Selesai Nomor 4=====//
 
-        System.out.print("Total Pembelian setelah Disc 10%                  = Rp. " + Total_bayar);
-        System.out.print("\nPembelian per orang <untuk 8 orang>               = Rp. " + Pembelian_perorang);
+        System.out.print("Total Pembelian setelah Disc 10% \t\t= Rp. " + Total_bayar);
+        System.out.printf("\nPembelian per orang <untuk %s orang> \t\t= Rp. %.2f%n", jumlahorang, Pembelian_perorang);
 
-        System.out.print("\n             Terima kasih atas kunjungan anda...");
-        System.out.print("\n             ...Tekan ENTER untuk keluar...");
+        input.nextLine();
+        System.out.println("\n\n \t\t Terima kasih atas kunjungan anda...");
+        System.out.println(" \t\t ...Tekan ENTER untuk keluar...");
+        input.nextLine();
     }
     
 }
