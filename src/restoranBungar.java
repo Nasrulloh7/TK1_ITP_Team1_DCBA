@@ -77,7 +77,27 @@ public class restoranBungar {
         
         //====Selesai Nomor 2=====//
 
-    
+        //====Proses Penghitungan pesanan=====//
+         double Menu1 = (pesanan1 * makanan1_price);
+         double Menu2 = (pesanan2 * makanan2_price);
+         double Menu3 = (pesanan3 * makanan3_price);
+         double Menu4 = (pesanan4 * makanan4_price);
+         double Menu5 = (pesanan5 * makanan5_price);
+         double Total = Menu1 + Menu2 + Menu3 + Menu4 + Menu5;
+         double Diskon = Total * 10/(float)100;
+         double Total_bayar = Total - Diskon;
+         double Pembelian_perorang = Total_bayar/jumlah_orang;
+        
+        //====Hasil Penghitungan pesanan=====//
+         System.out.println("Harga Pembelian : ");
+         System.out.printf("\n 1. Nasi Goreng Spesial       %d Porsi *  9999,99  = Rp. " + Menu1, pesanan1);
+         System.out.printf("\n 2. Ayam goreng Spesial       %d Porsi *  12345,67 = Rp. " + Menu2, pesanan2);
+         System.out.printf("\n 3. Steak Sirloin Spesial     %d Porsi *  21108,40 = Rp. " + Menu3, pesanan3);
+         System.out.printf("\n 4. Kwetiaw Siram Spesial     %d Porsi *  13579,13 = Rp. " + Menu4, pesanan4);
+         System.out.printf("\n 5. Kambing Guling Spesial    %d Porsi *  98765,43 = Rp. " + Menu5, pesanan5);
+         System.out.println("");
+         System.out.println("=======================================================================");
+        //====Selesai Nomor 3=====//
         
     }
     
