@@ -56,26 +56,24 @@ public class restoranBungar {
         //====Selesai Nomor 1 A dan B=====//
 
     
-        System.out.println("=====================" + "\n");
-        
-
+        System.out.println("Pesanan Anda [Batas Pesanan 0-10 Porsi]");
     
-        System.out.print("1. Nasi Goreng Spesial :  ");
+        System.out.print("1. Nasi Goreng Spesial \t\t : ");
         pesanan1 = input.nextInt();
 
-        System.out.print("2. Ayam Bakar Spesial :  ");
+        System.out.print("2. Ayam Bakar Spesial \t\t : ");
         pesanan2 = input.nextInt();
 
-        System.out.print("3. Steak Sirloin Spesial :  ");
+        System.out.print("3. Steak Sirloin Spesial \t : ");
         pesanan3 = input.nextInt();
 
-        System.out.print("4. Kwetiaw Siram Spesial :  ");
+        System.out.print("4. Kwetiaw Siram Spesial \t : ");
         pesanan4 = input.nextInt();
 
-        System.out.print("5. Kambing Guling Spesial :  ");
+        System.out.print("5. Kambing Guling Spesial \t : ");
         pesanan5 = input.nextInt();
-        
         //====Selesai Nomor 2=====//
+
 
         //====Proses Penghitungan pesanan=====//
          double Menu1 = (pesanan1 * makanan1_price);
@@ -83,13 +81,24 @@ public class restoranBungar {
          double Menu3 = (pesanan3 * makanan3_price);
          double Menu4 = (pesanan4 * makanan4_price);
          double Menu5 = (pesanan5 * makanan5_price);
+         
+         // Total pesanan
          double Total = Menu1 + Menu2 + Menu3 + Menu4 + Menu5;
+         
+         // Jumlah diskon
          double Diskon = Total * 10/(float)100;
+         
+         // Total bayar
          double Total_bayar = Total - Diskon;
-         double Pembelian_perorang = Total_bayar/jumlah_orang;
+         
+         // Pembayaran per orang
+         double Pembelian_perorang = Total_bayar/jumlahorang;
         
+         
+         System.out.println("\n\n" + "Selamat menikmati makanan anda..." + "\n");
+         
         //====Hasil Penghitungan pesanan=====//
-         System.out.println("Harga Pembelian : ");
+         System.out.print("Harga Pembelian : ");
          System.out.printf("\n 1. Nasi Goreng Spesial       %d Porsi *  9999,99  = Rp. " + Menu1, pesanan1);
          System.out.printf("\n 2. Ayam goreng Spesial       %d Porsi *  12345,67 = Rp. " + Menu2, pesanan2);
          System.out.printf("\n 3. Steak Sirloin Spesial     %d Porsi *  21108,40 = Rp. " + Menu3, pesanan3);
