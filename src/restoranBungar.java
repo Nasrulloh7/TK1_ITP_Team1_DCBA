@@ -2,7 +2,7 @@
 /**
  * Introduction to Programming
  * @author             Team1 - DCBA
- *         Aldo Sunan        - 
+ *         Aldo Sunan        - 2602233260
  *         M. Ilmi Nasrulloh - 2602233235
  *         Muliando Marpaung - 2602233393
  *         Nurul Amalia      - 2602243993
@@ -17,7 +17,7 @@ public class restoranBungar {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        
+
         int jumlah_orang;
         String nama_pemesan;
         
@@ -36,7 +36,7 @@ public class restoranBungar {
         
         // input jumlah orang
         System.out.print("Pesan untuk berapa orang : ");
-        int jumlahorang = input.nextInt();
+        jumlah_orang = input.nextInt();
         input.nextLine();
         
         // input nama pemesan
@@ -87,7 +87,7 @@ public class restoranBungar {
          double Diskon = Total * 10/(float)100;
          double Total_bayar = Total - Diskon;
          double Pembelian_perorang = Total_bayar/jumlah_orang;
-        
+
         //====Hasil Penghitungan pesanan=====//
          System.out.println("Harga Pembelian : ");
          System.out.printf("\n 1. Nasi Goreng Spesial       %d Porsi *  9999,99  = Rp. " + Menu1, pesanan1);
@@ -98,7 +98,17 @@ public class restoranBungar {
          System.out.println("");
          System.out.println("=======================================================================");
         //====Selesai Nomor 3=====//
-        
+
+        System.out.print("Total Pembelian                                   = Rp. " + Total);
+        System.out.print("\nDisc 10% <Masa Promosi>                           = Rp. " + Diskon+" -");
+        System.out.println("\n=======================================================================");
+        //====Selesai Nomor 4=====//
+
+        System.out.print("Total Pembelian setelah Disc 10%                  = Rp. " + Total_bayar);
+        System.out.print("\nPembelian per orang <untuk 8 orang>               = Rp. " + Pembelian_perorang);
+
+        System.out.print("\n             Terima kasih atas kunjungan anda...");
+        System.out.print("\n             ...Tekan ENTER untuk keluar...");
     }
     
 }
