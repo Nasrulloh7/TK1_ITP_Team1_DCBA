@@ -4,7 +4,7 @@
  * @author             Team1 - DCBA
  *         Aldo Sunan        - 
  *         M. Ilmi Nasrulloh - 2602233235
- *         Muliando Marpaung - 
+ *         Muliando Marpaung - 2602233393
  *         Nurul Amalia      - 2602243993
  *         Parlin Situmeang  - 2602239056
  */
@@ -27,6 +27,8 @@ public class restoranBungar {
                makanan3_price = 21108.40,
                makanan4_price = 13579.13,
                makanan5_price = 98765.43;
+        
+        int pesanan1, pesanan2, pesanan3, pesanan4, pesanan5;
         
         //====Tugas Nomor 1 A dan B=====//
         System.out.println("Selamat Datang di Restoran BUNGAR");
@@ -52,6 +54,30 @@ public class restoranBungar {
         System.out.printf(" 5. Kambing Guling Spesial     Rp. %,.2f%n", makanan5_price);
         System.out.println();
         //====Selesai Nomor 1 A dan B=====//
+
+    
+        System.out.println("=====================" + "\n");
+        
+
+    
+        System.out.print("1. Nasi Goreng Spesial :  ");
+        pesanan1 = input.nextInt();
+
+        System.out.print("2. Ayam Bakar Spesial :  ");
+        pesanan2 = input.nextInt();
+
+        System.out.print("3. Steak Sirloin Spesial :  ");
+        pesanan3 = input.nextInt();
+
+        System.out.print("4. Kwetiaw Siram Spesial :  ");
+        pesanan4 = input.nextInt();
+
+        System.out.print("5. Kambing Guling Spesial :  ");
+        pesanan5 = input.nextInt();
+        
+        //====Selesai Nomor 2=====//
+
+    
         
     }
     
